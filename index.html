@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>A Little Birthday Surprise 🎀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaties" aria-hidden="true">
+    <span>♡</span><span>✿</span><span>🎀</span><span>♡</span><span>✨</span><span>♡</span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Home">🎀 a tiny surprise</a>
+    <button id="musicBtn" class="music-btn" type="button" aria-pressed="true">♫ Pause cute tune</button>
+  </header>
+
+  <main>
+    <section id="welcome" class="hero section-shell">
+      <div class="sticker sticker-left">♡</div>
+      <div class="hero-card">
+        <p class="eyebrow">A little website made just for you</p>
+        <div class="hero-art" aria-hidden="true">
+          <div class="halo"></div>
+          <div class="teddy">🧸</div>
+          <div class="tiny-heart heart-one">💗</div>
+          <div class="tiny-heart heart-two">✨</div>
+          <div class="tiny-heart heart-three">🎀</div>
+        </div>
+        <p class="mini-label">today is all about you</p>
+        <h1>Happy Birthday,<br><span class="script">Pookie!</span> 🎂</h1>
+        <p class="intro">I made a little something for your special day.<br>Ready to open your surprise?</p>
+        <button id="openSurprise" class="primary-btn" type="button">Open your surprise <span>♡</span></button>
+        <p class="tiny-note">made with a little extra sparkle ✨</p>
+      </div>
+      <div class="sticker sticker-right">✿</div>
+    </section>
+
+    <section id="surprise" class="surprise-section hidden">
+      <div class="section-heading">
+        <p class="eyebrow">your special little corner</p>
+        <h2>A day as lovely as you 🌷</h2>
+        <p>Sending you the biggest birthday wishes and a pocketful of happy moments.</p>
+      </div>
+
+      <div class="cake-card card">
+        <p class="card-kicker">make a little wish</p>
+        <h3>A tiny birthday cake</h3>
+        <p class="muted">Tap the candles to make your wish come true ✨</p>
+        <button id="cakeBtn" class="cake-button" type="button" aria-label="Blow out the birthday candles">
+          <span class="candle candle-one"><i class="flame"></i></span>
+          <span class="candle candle-two"><i class="flame"></i></span>
+          <span class="candle candle-three"><i class="flame"></i></span>
+          <span class="cake-top"></span><span class="cake-body"></span><span class="cake-plate"></span>
+        </button>
+        <p id="cakeMessage" class="cake-message" aria-live="polite">Three little candles, one big wish 💗</p>
+      </div>
+
+      <div class="memories card">
+        <div class="section-heading compact">
+          <p class="eyebrow">little moments, big smiles</p>
+          <h2>Our little memory wall 📸</h2>
+          <p>A sweet little corner for our favourite memories and brightest smiles ✨</p>
+        </div>
+        <div id="photoGrid" class="photo-grid">
+          <!-- PHOTO 1: Insert your image by replacing the .photo-placeholder div with: <img src="your-photo-1.jpg" alt="Photo 1"> -->
+          <div class="photo-slot">
+            <div class="photo-placeholder">
+              <img src="pokkie_cat.png" alt="Memory 1">
+              <span class="placeholder-icon"></span>
+              <span class="placeholder-tag">Photo 1 ♡</span>
+            </div>
+            <p>your favourite moment</p>
+          </div>
+
+          <!-- PHOTO 2: Insert your image by replacing the .photo-placeholder div with: <img src="your-photo-2.jpg" alt="Photo 2"> -->
+          <div class="photo-slot tilted">
+            <div class="photo-placeholder">
+              <img src="cuttie.png" alt="Memory 1">
+              <span class="placeholder-icon"></span>
+              <span class="placeholder-tag">Photo 2 ♡</span>
+            </div>
+            <p>a little happy memory</p>
+          </div>
+
+          <!-- PHOTO 3: Insert your image by replacing the .photo-placeholder div with: <img src="your-photo-3.jpg" alt="Photo 3"> -->
+          <div class="photo-slot">
+            <div class="photo-placeholder">
+              <img src="Cute_teddy.png" alt="Memory 1">
+              <span class="placeholder-icon"></span>
+              <span class="placeholder-tag">Photo 3 ♡</span>
+            </div>
+            <p>one for the scrapbook</p>
+          </div>
+        </div>
+        <p class="tiny-note">sweet memories wrapped in pink ribbons 🎀</p>
+      </div>
+
+      <div class="letter-card card">
+        <div class="letter-icon">💌</div>
+        <p class="eyebrow">a little note for you</p>
+        <h2>Open your birthday letter</h2>
+        <p class="muted">A few words, wrapped up with lots of good wishes.</p>
+        <button id="openLetter" class="primary-btn" type="button">Read your letter ♡</button>
+      </div>
+
+      <div class="closing">
+        <div class="closing-bow">🎀</div>
+        <h2>Keep shining, birthday star!</h2>
+        <p>I hope this year brings you laughter, kind people, new adventures and lots of reasons to smile.</p>
+        <p class="signature">with warm wishes, <span>someone who thinks you're pretty special ♡</span></p>
+        <button id="backTop" class="text-btn" type="button">Back to the beginning ↑</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="letterDialog" class="letter-dialog">
+    <button id="closeLetter" class="close-btn" type="button" aria-label="Close letter">×</button>
+    <div class="letter-paper">
+      <div class="letter-top">♡ a birthday note ♡</div>
+      <div class="letter-stamp">💌</div>
+      <h2>Dear Pookie,</h2>
+      <p>Happy Birthday! 🎂💗</p>
+      <p>I hope your day is full of your favourite things, unexpected little joys, and people who make you feel appreciated.</p>
+      <p>Keep being your lovely self, keep dreaming big, and never forget that you deserve good things—not just today, but every day.</p>
+      <p>May this new chapter bring you happy memories, confidence, laughter and a thousand tiny reasons to smile.</p>
+      <p class="letter-signoff">Have the sweetest birthday!<br><span>♡ sending you good vibes ♡</span></p>
+      <p class="edit-hint">You can personalise this letter in index.html.</p>
+    </div>
+  </dialog>
+
+ <footer>
+  made with ♡, a little pink, and lots of good wishes
+  <br>
+  developed by <i>@omshree1012</i> 
+</footer>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
